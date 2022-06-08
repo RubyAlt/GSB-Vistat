@@ -62,6 +62,18 @@
     <Compile Include="Etape.cs" />
     <Compile Include="EtapeNormee.cs" />
     <Compile Include="Famille.cs" />
+    <Compile Include="frmWorkflow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWorkflow.Designer.cs">
+      <DependentUpon>frmWorkflow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_EtapeNormee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_EtapeNormee.Designer.cs">
+      <DependentUpon>frm_EtapeNormee.cs</DependentUpon>
+    </Compile>
     <Compile Include="Global.cs" />
     <Compile Include="Medicament.cs" />
     <Compile Include="MedicamentsParFamille.cs">
@@ -85,6 +97,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DecisionDuneEtape.resx">
       <DependentUpon>DecisionDuneEtape.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWorkflow.resx">
+      <DependentUpon>frmWorkflow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_EtapeNormee.resx">
+      <DependentUpon>frm_EtapeNormee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MedicamentsParFamille.resx">
       <DependentUpon>MedicamentsParFamille.cs</DependentUpon>

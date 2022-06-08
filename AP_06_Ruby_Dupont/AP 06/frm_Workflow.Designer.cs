@@ -57,6 +57,7 @@ namespace AP_06
             this.label1.Size = new System.Drawing.Size(727, 67);
             this.label1.TabIndex = 0;
             this.label1.Text = "ÉTAPES PAR MÉDICAMENT";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -67,6 +68,7 @@ namespace AP_06
             this.label2.Size = new System.Drawing.Size(227, 38);
             this.label2.TabIndex = 1;
             this.label2.Text = "Médicament :";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // lvWorkflowMedicament
             // 
@@ -104,6 +106,7 @@ namespace AP_06
             this.label3.Size = new System.Drawing.Size(343, 38);
             this.label3.TabIndex = 3;
             this.label3.Text = "Étapes du workflow :";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // listView1
             // 
@@ -119,6 +122,7 @@ namespace AP_06
             this.listView1.TabIndex = 4;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // columnHeader4
             // 

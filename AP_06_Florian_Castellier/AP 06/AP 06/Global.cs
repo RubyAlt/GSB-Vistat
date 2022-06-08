@@ -10,5 +10,6 @@ namespace AP_06
     {
         public static Dictionary<string, Famille> lesFamilles = new Dictionary<string, Famille>();
         public static Dictionary<string, Medicament> lesMedicaments = new Dictionary<string, Medicament>();
+        public static Dictionary<string, EtapeNormee> lesEtapesNormees = new Dictionary<string, EtapeNormee>();
     }
 }

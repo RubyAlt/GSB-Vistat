@@ -9,7 +9,7 @@ namespace AP_06
 {
     public static class SQL
     {
-        private static string ConnexionString = @"Data Source=BTS2020-23\SQLEXPRESS;Initial Catalog=DB_gesAMM;Integrated Security=True;MultipleActiveResultSets=True;";
+        private static string ConnexionString = @"Data Source=BTS2020-15\SQLEXPRESS;Initial Catalog=DB_gesAMM;Integrated Security=True;MultipleActiveResultSets=True;";
         public static SqlConnection Connexion = new SqlConnection(ConnexionString);
 
         public static void lireLesFamilles()
@@ -27,7 +27,27 @@ namespace AP_06
 
                 Famille uneFamille = new Famille(unCode, unLibelle, unNbMedi);
 
-                Global.lesFamilles.Add(unCode,uneFamille);
+                Global.lesFamilles.Add(unCode, uneFamille);
+            }
+        }
+
+        public static void lireLesEtapesNormees()
+        {
+            Global.lesEtapesNormees.Clear();
+
+            SqlCommand commandSQL = new SqlCommand("loadEtapesNormees", Connexion);
+            SqlDataReader allData = commandSQL.ExecuteReader();
+
+            while (allData.Read())
+            {
+                string num = allData.GetValue(0).ToString();
+                string libelle = allData.GetValue(1).ToString();
+                string norme = allData.GetValue(2).ToString();
+                DateTime dateNorme = DateTime.Parse(allData.GetValue(3).ToString()); // A CHANGER
+
+                EtapeNormee etapeNormee = new EtapeNormee(int.Parse(num), libelle, norme, dateNorme);
+
+                Global.lesEtapesNormees.Add(num, etapeNormee);
             }
         }
     }

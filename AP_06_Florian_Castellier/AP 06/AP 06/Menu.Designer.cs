@@ -31,48 +31,67 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.consultationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.médicamentsFamilleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.etapeNorméeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.décisionDuneÉtapeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.workflowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.consultationToolStripMenuItem,
             this.décisionDuneÉtapeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(934, 26);
+            this.menuStrip1.Size = new System.Drawing.Size(934, 31);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // consultationToolStripMenuItem
             // 
             this.consultationToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.médicamentsFamilleToolStripMenuItem});
+            this.médicamentsFamilleToolStripMenuItem,
+            this.etapeNorméeToolStripMenuItem,
+            this.workflowToolStripMenuItem});
             this.consultationToolStripMenuItem.Name = "consultationToolStripMenuItem";
-            this.consultationToolStripMenuItem.Size = new System.Drawing.Size(106, 22);
+            this.consultationToolStripMenuItem.Size = new System.Drawing.Size(131, 27);
             this.consultationToolStripMenuItem.Text = "Consultation";
             this.consultationToolStripMenuItem.Click += new System.EventHandler(this.consultationToolStripMenuItem_Click);
             // 
             // médicamentsFamilleToolStripMenuItem
             // 
             this.médicamentsFamilleToolStripMenuItem.Name = "médicamentsFamilleToolStripMenuItem";
-            this.médicamentsFamilleToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.médicamentsFamilleToolStripMenuItem.Size = new System.Drawing.Size(291, 28);
             this.médicamentsFamilleToolStripMenuItem.Text = "Médicaments / Famille";
             this.médicamentsFamilleToolStripMenuItem.Click += new System.EventHandler(this.médicamentsFamilleToolStripMenuItem_Click);
+            // 
+            // etapeNorméeToolStripMenuItem
+            // 
+            this.etapeNorméeToolStripMenuItem.Name = "etapeNorméeToolStripMenuItem";
+            this.etapeNorméeToolStripMenuItem.Size = new System.Drawing.Size(291, 28);
+            this.etapeNorméeToolStripMenuItem.Text = "Etape Normée";
+            this.etapeNorméeToolStripMenuItem.Click += new System.EventHandler(this.etapeNorméeToolStripMenuItem_Click);
             // 
             // décisionDuneÉtapeToolStripMenuItem
             // 
             this.décisionDuneÉtapeToolStripMenuItem.Name = "décisionDuneÉtapeToolStripMenuItem";
-            this.décisionDuneÉtapeToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.décisionDuneÉtapeToolStripMenuItem.Size = new System.Drawing.Size(206, 27);
             this.décisionDuneÉtapeToolStripMenuItem.Text = "Décision d\'une étape";
             this.décisionDuneÉtapeToolStripMenuItem.Click += new System.EventHandler(this.décisionDuneÉtapeToolStripMenuItem_Click);
             // 
+            // workflowToolStripMenuItem
+            // 
+            this.workflowToolStripMenuItem.Name = "workflowToolStripMenuItem";
+            this.workflowToolStripMenuItem.Size = new System.Drawing.Size(291, 28);
+            this.workflowToolStripMenuItem.Text = "Workflow";
+            this.workflowToolStripMenuItem.Click += new System.EventHandler(this.workflowToolStripMenuItem_Click);
+            // 
             // Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(24F, 46F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.IndianRed;
             this.ClientSize = new System.Drawing.Size(934, 761);
@@ -96,5 +115,7 @@
         private System.Windows.Forms.ToolStripMenuItem consultationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem médicamentsFamilleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem décisionDuneÉtapeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem etapeNorméeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem workflowToolStripMenuItem;
     }
 }

@@ -42,5 +42,18 @@ namespace AP_06
         {
 
         }
+
+        private void etapeNorméeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_EtapeNormee frm = new frm_EtapeNormee();
+            frm.TopLevel = false;
+            Controls.Add(frm);
+            frm.Show();
+        }
+
+        private void workflowToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
